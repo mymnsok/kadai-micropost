@@ -145,8 +145,9 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-      // 追加        
         Collective\Html\HtmlServiceProvider::class,
+      // 追加        
+        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
 
     ],
 
@@ -201,7 +202,7 @@ return [
         'Html' => Collective\Html\HtmlFacade::class,
         
         //Gravatar
-        Thomaswelton\LaravelGravatar\LaravelGravatarServiceProvider::class,
+        'Gravatar' => Thomaswelton\LaravelGravatar\Facades\Gravatar::class,
 
     ],
 
