@@ -66,6 +66,7 @@ class UsersController extends Controller
         $data += $this->counts($user);
         
         return view('users.show', $data);
+
     }
 
     /**
@@ -131,4 +132,5 @@ class UsersController extends Controller
         
         return view('users.followers', $data);
     }
+
 }

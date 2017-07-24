@@ -27,4 +27,10 @@ class CreateMicropostsTable extends Migration
         {
             Schema::drop('microposts');
         }
+        
+        public function like_micropost()
+        {
+            return $this->belongsToMany(User::class, 'user_micropost', 'micropost_id', 'user_id')->withTimestamps();
+        }
+        
 }
